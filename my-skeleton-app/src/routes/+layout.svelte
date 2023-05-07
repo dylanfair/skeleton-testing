@@ -11,6 +11,12 @@
 	import { Avatar } from '@skeletonlabs/skeleton';
 
 
+	function avatarClick() {
+		window.open(
+			"https://github.com/dylanfair",
+			"_blank"
+		);
+	}
 </script>
 
 <!-- App Shell -->
@@ -36,29 +42,19 @@
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Discord
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Twitter
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
+					href="https://github.com/dylanfair/skeleton-testing"
 					target="_blank"
 					rel="noreferrer"
 				>
 					GitHub
 				</a>
-				<Avatar src="https://i.pravatar.cc/" />
+				<Avatar initials="DC" 
+				fill="varient-filled-primary" 
+				width="w-10" 
+				cursor="cursor-pointer" 
+				border = "border-4 border-surface-300-600-token hover:!border-primary-500"
+				on:click={avatarClick}
+				/>
 
 			</svelte:fragment>
 		</AppBar>
