@@ -22,7 +22,10 @@ const config = {
 		}),
 		paths: {
 			base: dev ? '' : '/skeleton-testing'
-		}
+		},
+		// prerender: {
+		// 	enabled: true,
+		// },
 	}
 };
 
