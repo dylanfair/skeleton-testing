@@ -15,7 +15,8 @@
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.2cdb0f68.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/ProgressBar.svelte_svelte_type_style_lang.a353c95f.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.c61b0db6.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.be4764ab.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/3.bde2d8bb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.b7fa49e7.js">
 	</head>
 	<body data-sveltekit-preload-data="hover" data-theme="gold-nouveau">
 		<div style="display: contents" class="h-full overflow-hidden">
@@ -58,10 +59,16 @@
 
 			
 			<main id="page-content" class="flex-auto ">
-	<div class="container mx-auto p-8 space-y-8"><h1>My First Skeleton App</h1>
-	<p>This static site will generally hold whatever I am currently experimenting on within the skeleton framework on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
-	<p>The goal is that through working on this site I will learn more about using <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a> with <a href="https://www.skeleton.dev/" target="_blank">SkeletonUI</a>.
-	</p></div></main>
+	<div class="container h-full mx-auto gap-8 flex flex-col"><form class="card p-4 flex flex-col gap-3"><h2>New Note</h2>
+        <textarea class="textarea" rows="5" placeholder="Note content..."></textarea>
+        <div class="input-chip textarea cursor-pointer p-2 rounded-container-token">
+	<div class="h-0 overflow-hidden"><select name="tags" multiple  tabindex="-1"></select></div>
+	
+	<div class="input-chip-interface space-y-4">
+		<form><input type="text" placeholder="Tags..." class="input-chip-field unstyled bg-transparent border-0 !ring-0 p-0 w-full"  value=""></form>
+		
+		</div></div>
+        <button type="button" class="btn variant-ghost-primary self-end">Create Note</button></form></div></main>
 
 			
 			</div>
@@ -91,7 +98,7 @@
 						import("./_app/immutable/entry/app.67f59049.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 2],
+							node_ids: [0, 3],
 							data,
 							form: null,
 							error: null

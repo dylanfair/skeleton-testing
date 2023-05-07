@@ -8,6 +8,7 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { Modal, Toast } from '@skeletonlabs/skeleton'
 	import { Avatar } from '@skeletonlabs/skeleton';
 
 
@@ -19,6 +20,9 @@
 	}
 </script>
 
+<Toast position="t" />
+<Modal />
+
 <!-- App Shell -->
 <AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
 
@@ -27,7 +31,7 @@
 		<nav class="list-nav">
 			<ul>
 				<li><a href="{base}/">Home</a></li>
-				<li><a href="{base}/about">About</a></li>
+				<li><a href="{base}/notes">Notes</a></li>
 			</ul>
 		</nav>
 		<!-- --- -->
@@ -48,7 +52,7 @@
 				>
 					GitHub
 				</a>
-				<Avatar initials="DC" 
+				<Avatar initials="DF" 
 				fill="varient-filled-primary" 
 				width="w-10" 
 				cursor="cursor-pointer" 
