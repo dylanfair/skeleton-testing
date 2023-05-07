@@ -6,10 +6,24 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+
+	import { Avatar } from '@skeletonlabs/skeleton';
 </script>
 
 <!-- App Shell -->
-<AppShell>
+<AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
+
+	<svelte:fragment slot="sidebarLeft">
+		<!-- Insert the list: -->
+		<nav class="list-nav">
+			<ul>
+				<li><a href="./">Home</a></li>
+				<li><a href="./">About</a></li>
+			</ul>
+		</nav>
+		<!-- --- -->
+	</svelte:fragment>
+
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar>
@@ -41,6 +55,8 @@
 				>
 					GitHub
 				</a>
+				<Avatar src="https://i.pravatar.cc/" />
+
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
