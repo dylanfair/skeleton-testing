@@ -1,4 +1,6 @@
 <script lang='ts'>
+	import {base} from '$app/paths';
+	
 	// The ordering of these imports is critical to your app working properly
 	import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
 	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
@@ -6,8 +8,9 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-
 	import { Avatar } from '@skeletonlabs/skeleton';
+
+
 </script>
 
 <!-- App Shell -->
@@ -17,8 +20,8 @@
 		<!-- Insert the list: -->
 		<nav class="list-nav">
 			<ul>
-				<li><a href="./">Home</a></li>
-				<li><a href="./about">About</a></li>
+				<li><a href="{base}/">Home</a></li>
+				<li><a href="{base}/about">About</a></li>
 			</ul>
 		</nav>
 		<!-- --- -->
