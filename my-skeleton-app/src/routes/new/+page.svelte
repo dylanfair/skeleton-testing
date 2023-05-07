@@ -25,7 +25,7 @@
         content = '';
         tags = [];
         toastStore.trigger(t);
-        goto(returnUrl);
+        goto("./notes");
     }
 </script>
 
