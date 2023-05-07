@@ -1,8 +1,10 @@
 <script lang="ts">
+    import { base } from '$app/paths';
     import { goto } from "$app/navigation";
     import { noteStore } from "$lib/stores";
     import { InputChip, toastStore, type ToastSettings } from "@skeletonlabs/skeleton";
 
+    const returnUrl: string = base + "/notes"
     let tags: string[] = [];
     let content: string;
 
@@ -23,7 +25,7 @@
         content = '';
         tags = [];
         toastStore.trigger(t);
-        goto("/");
+        goto(returnUrl);
     }
 </script>
 
