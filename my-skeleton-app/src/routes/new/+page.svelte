@@ -4,7 +4,6 @@
     import { noteStore } from "$lib/stores";
     import { InputChip, toastStore, type ToastSettings } from "@skeletonlabs/skeleton";
 
-    const returnUrl: string = base + "/notes"
     let tags: string[] = [];
     let content: string;
 
