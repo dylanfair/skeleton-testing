@@ -1,7 +1,45 @@
 <script lang="ts">
     import { base } from '$app/paths';
     import { noteStore } from "$lib/stores";
-	import { toastStore, type ModalSettings, modalStore } from "@skeletonlabs/skeleton";
+	import { toastStore, type ToastSettings, type ModalSettings, modalStore } from "@skeletonlabs/skeleton";
+	import NotesModal from '$lib/modals/NotesModal.svelte';
+
+	import type { ModalComponent } from "@skeletonlabs/skeleton";
+
+    const t: ToastSettings = {
+        message: 'Note successfully created!',
+        background: 'variant-filled-success',
+    };
+
+	function createNote(): void {
+		const createNoteModal: ModalSettings = {
+			type: 'prompt',
+			title: 'Create a Note',
+			body: 'Whatcha up to today?',
+			value: 'Note content...',
+			valueAttr: { type: 'text', required: true },
+			response: (r: string | boolean) => {
+				if (r === false) {
+					console.log("Did not create a note.")
+				}
+				else if (typeof r === 'string'){
+					let tags: string[] = [];
+
+					noteStore.update((notes) => [
+					...notes,
+					{
+						id: crypto.randomUUID(),
+						content: r,
+						tags
+					}
+				])
+				toastStore.trigger(t); 
+				};
+			}
+		}
+		modalStore.trigger(createNoteModal);
+	}
+
 
 	function deleteNote(noteId: string): void {
 		const confirmDelete: ModalSettings = {
@@ -23,17 +61,31 @@
 				});
 			}
 		};
-		modalStore.trigger(confirmDelete)
+		modalStore.trigger(confirmDelete);
 	}
+
+	function modalComponentForm(): void {
+		const c: ModalComponent = { ref: NotesModal };
+		const d: ModalSettings = {
+			type: 'component',
+			component: c,
+			title: "Let's make a new note!",
+			body: 'Fill in the following to create a new note.',
+			response: (r: any) => console.log('response:', r)
+		};
+		modalStore.trigger(d);
+	}
+
+
 </script>
 
 
 <div class="container mx-auto p-8 space-y-8">
 	<div class="flex items-center justify-between">
 		<h2>Notes</h2>
-		<a href="{base}/new" class="btn variant-ghost-primary"> New Note </a>
+		<button on:click={modalComponentForm} class="btn variant-ghost-primary">Create a Note</button>
 	</div>
-		<p>On this page I wanted to implement the code from <a href="https://www.youtube.com/watch?v=P_A0qQ7AuK8" target="_blank">Huntabyte's video</a>.</p>
+	<p>On this page I wanted to implement the code from <a href="https://www.youtube.com/watch?v=P_A0qQ7AuK8" target="_blank">Huntabyte's video</a>, with a couple changes of my own.</p>
 	<div class="grid grid-cols-3 gap-4">
 		{#each $noteStore as note}
 			<div class="card p-4 variant-ghost-warning flex flex-col gap-2 relative">
