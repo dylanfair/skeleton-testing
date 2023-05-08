@@ -49,7 +49,7 @@
 		<form class="modal-form {cForm}">
 			<label class="label">
 				<span>Note</span>
-				<input class="input" type="text" bind:value={content} placeholder="Enter name..." />
+				<input class="input" type="text" bind:value={content} placeholder="Note content..." />
 			</label>
 			
             <InputChip class="input" bind:value={tags} name="tags" placeholder="Enter tags... (optional)"/>

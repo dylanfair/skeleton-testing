@@ -1,45 +1,9 @@
 <script lang="ts">
-    import { base } from '$app/paths';
     import { noteStore } from "$lib/stores";
-	import { toastStore, type ToastSettings, type ModalSettings, modalStore } from "@skeletonlabs/skeleton";
+	import { toastStore, type ModalSettings, modalStore } from "@skeletonlabs/skeleton";
 	import NotesModal from '$lib/modals/NotesModal.svelte';
 
 	import type { ModalComponent } from "@skeletonlabs/skeleton";
-
-    const t: ToastSettings = {
-        message: 'Note successfully created!',
-        background: 'variant-filled-success',
-    };
-
-	function createNote(): void {
-		const createNoteModal: ModalSettings = {
-			type: 'prompt',
-			title: 'Create a Note',
-			body: 'Whatcha up to today?',
-			value: 'Note content...',
-			valueAttr: { type: 'text', required: true },
-			response: (r: string | boolean) => {
-				if (r === false) {
-					console.log("Did not create a note.")
-				}
-				else if (typeof r === 'string'){
-					let tags: string[] = [];
-
-					noteStore.update((notes) => [
-					...notes,
-					{
-						id: crypto.randomUUID(),
-						content: r,
-						tags
-					}
-				])
-				toastStore.trigger(t); 
-				};
-			}
-		}
-		modalStore.trigger(createNoteModal);
-	}
-
 
 	function deleteNote(noteId: string): void {
 		const confirmDelete: ModalSettings = {
@@ -75,8 +39,6 @@
 		};
 		modalStore.trigger(d);
 	}
-
-
 </script>
 
 
