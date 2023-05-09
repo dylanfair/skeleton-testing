@@ -42,7 +42,7 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<strong class="text-xl uppercase hover:text-primary-500"><a href="https://www.skeleton.dev/" target="_blank">Skeleton</a></strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a

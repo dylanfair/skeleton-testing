@@ -47,7 +47,7 @@
 		<h2>Notes</h2>
 		<button on:click={modalComponentForm} class="btn variant-ghost-primary">Create a Note</button>
 	</div>
-	<p>On this page I wanted to implement the code from <a href="https://www.youtube.com/watch?v=P_A0qQ7AuK8" target="_blank">Huntabyte's video</a>, with a couple changes of my own.</p>
+	<p>On this page I wanted to implement the code from <a href="https://www.youtube.com/watch?v=P_A0qQ7AuK8" target="_blank">Huntabyte's video</a>, with a couple changes of my own. Most notably was having the 'Create a Note' action be a form module instead of a page redirect.</p>
 	<div class="grid grid-cols-3 gap-4">
 		{#each $noteStore as note}
 			<div class="card p-4 variant-ghost-warning flex flex-col gap-2 relative">
