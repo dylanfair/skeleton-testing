@@ -46,7 +46,7 @@
 		<article>{$modalStore[0].body ?? '(body missing)'}</article>
 		<!-- Enable for debugging: -->
 		<!-- <pre>{JSON.stringify(formData, null, 2)}</pre> -->
-		<form class="modal-form {cForm}">
+		<form class="modal-form {cForm} data-sveltekit-keepfocus">
 			<label class="label">
 				<span>Note</span>
 				<input class="input" type="text" bind:value={content} placeholder="Note content..." />

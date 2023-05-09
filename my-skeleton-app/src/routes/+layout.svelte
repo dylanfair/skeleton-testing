@@ -32,6 +32,7 @@
 			<ul>
 				<li><a href="{base}/">Home</a></li>
 				<li><a href="{base}/notes">Notes</a></li>
+				<li><a href="{base}/data" data-sveltekit-preload-data="hover">Data</a></li>
 			</ul>
 		</nav>
 		<!-- --- -->
