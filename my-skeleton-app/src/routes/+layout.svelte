@@ -7,14 +7,10 @@
 	import '@skeletonlabs/skeleton/styles/all.css';
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
+	import "./../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-	import { AppRail, AppRailTile } from '@skeletonlabs/skeleton';
 	import { Modal, Toast } from '@skeletonlabs/skeleton'
 	import { Avatar } from '@skeletonlabs/skeleton';
-
-	import { page } from '$app/stores';
-	import { derived } from 'svelte/store';
-	const selected = derived(page, $page => $page.url.pathname);
 
 	function avatarClick() {
 		window.open(
@@ -38,20 +34,22 @@
 			</svelte:fragment>
 
 			<svelte:fragment>
-				<AppRail {selected}>
-					<AppRailTile label="Home" href="{base}/"><i class="fa-solid fa-image text-2xl" /></AppRailTile>
-					<AppRailTile label="Notes" href="{base}/notes"><i class="fa-solid fa-image text-2xl" /></AppRailTile>
-					<AppRailTile label="Data" href="{base}/data" data-sveltekit-preload-data="hover"><i class="fa-solid fa-image text-2xl" /></AppRailTile>
-				</AppRail>
-					
-				
-				
-			
-				<!-- <div class="flex flex-none items-center space-x-20">
-					<a class="space-x-5 btn hover:variant-soft-primary" href="{base}/">Home</a>
-					<a class="space-x-5 btn hover:variant-soft-primary" href="{base}/notes">Notes</a>
-					<a class="space-x-5 btn hover:variant-soft-primary" href="{base}/data" data-sveltekit-preload-data="hover">Data</a>
-				</div>			 -->
+				<div class="logo-cloud grid-cols-1 lg:!grid-cols-3 gap-0.5 w-full h-20">
+					<a class="logo-item variant-soft-warning h-20" href="{base}/">
+						<span></span>
+						<i class="fa-solid fa-house"></i>
+						<span>Home</span>
+						<span></span>
+					</a>
+					<a class="logo-item variant-soft-warning h-20" href="{base}/notes">
+						<i class="fa-solid fa-note-sticky"></i>
+						<span>Notes</span>
+					</a>
+					<a class="logo-item variant-soft-warning h-20" href="{base}/data" data-sveltekit-preload-data="hover">
+						<i class="fa-solid fa-database"></i>
+						<span>Data</span>
+					</a>
+				</div>
 			</svelte:fragment>
 
 			<svelte:fragment slot="trail">	

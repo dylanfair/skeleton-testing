@@ -13,6 +13,7 @@ export const load = async ({ fetch }) => {
         const users = usersData.users
         return users
     }
+
     
 
     return {
