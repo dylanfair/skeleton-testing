@@ -5,17 +5,20 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/0.a314047e.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/0.115530e6.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/ProgressBar.4f1e9ba5.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.dd93d9fd.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.14df8b69.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.b19bee24.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.94f244e1.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.fa8f43c6.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.565c9916.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.023e5800.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/ProgressBar.svelte_svelte_type_style_lang.543fd1de.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/3.3a404284.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.921656ab.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.84172b74.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.c6ed1b2d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.59a04def.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.64d8c6af.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.8467376d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/ProgressBar.svelte_svelte_type_style_lang.92eb8e0b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/AppShell.1927d5c3.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.132f9321.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.f78da78d.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.cd23d5fe.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/4.d3c52a01.js">
 	</head>
 	<body data-sveltekit-preload-data="hover" data-theme="gold-nouveau">
 		<div style="display: contents" class="h-full overflow-hidden">
@@ -30,12 +33,48 @@
 <div id="appShell" class="w-full h-full flex flex-col overflow-hidden " data-testid="app-shell">
 	<header id="shell-header" class="flex-none z-10">
 		<div class="app-bar flex flex-col bg-surface-100-800-token  space-y-4 p-4  " data-testid="app-bar" role="toolbar" aria-label="" aria-labelledby="">
-	<div class="app-bar-row-main grid items-center grid-cols-[auto_1fr_auto] gap-4 ">
+	<div class="app-bar-row-main grid items-center grid-cols-3 gap-4 ">
 		<div class="app-bar-slot-lead flex-none flex justify-between items-center "><strong class="text-xl uppercase hover:text-primary-500"><a href="https://www.skeleton.dev/" target="_blank">Skeleton</a></strong></div>
 		
-		<div class="app-bar-slot-default flex-auto "></div>
+		<div class="app-bar-slot-default flex-auto place-self-center">
+
+<div class="app-rail grid grid-rows-[auto_1fr_auto] overflow-y-auto bg-surface-100-800-token  w-[70px] sm:w-20 h-full gap-0 ">
+	<div class="app-bar-lead "></div>
+	
+	<div class="app-bar-default ">
+
+<div>
+	
+	<button href="/skeleton-testing/" class="app-rail-tile unstyled grid place-content-center place-items-center w-full aspect-square space-y-1.5 cursor-pointer bg-primary-hover-token  ">
+		<div class="app-rail-tile-icon "><i class="fa-solid fa-image text-2xl"></i></div>
 		
-		<div class="app-bar-slot-trail flex-none flex items-center space-x-4 "><a class="btn btn-sm variant-ghost-surface" href="https://github.com/dylanfair/skeleton-testing" target="_blank" rel="noreferrer">GitHub
+		<div class="app-rail-tile-label font-bold text-xs text-center ">Home</div></button></div>
+					
+
+<div>
+	
+	<button href="/skeleton-testing/notes" class="app-rail-tile unstyled grid place-content-center place-items-center w-full aspect-square space-y-1.5 cursor-pointer bg-primary-hover-token  ">
+		<div class="app-rail-tile-icon "><i class="fa-solid fa-image text-2xl"></i></div>
+		
+		<div class="app-rail-tile-label font-bold text-xs text-center ">Notes</div></button></div>
+					
+
+<div>
+	
+	<button href="/skeleton-testing/data" data-sveltekit-preload-data="hover" class="app-rail-tile unstyled grid place-content-center place-items-center w-full aspect-square space-y-1.5 cursor-pointer bg-primary-hover-token  ">
+		<div class="app-rail-tile-icon "><i class="fa-solid fa-image text-2xl"></i></div>
+		
+		<div class="app-rail-tile-label font-bold text-xs text-center ">Data</div></button></div></div>
+	
+	<div class="app-bar-trail "></div></div>
+					
+				
+				
+			
+				
+			</div>
+		
+		<div class="app-bar-slot-trail flex-none flex items-center space-x-4 place-content-end"><a class="btn btn-sm variant-ghost-surface" href="https://github.com/dylanfair/skeleton-testing" target="_blank" rel="noreferrer">GitHub
 				</a>
 				<figure class="avatar flex aspect-square text-surface-50 font-semibold justify-center items-center overflow-hidden isolate bg-surface-400-500-token w-10 border-4 border-surface-300-600-token hover:!border-primary-500 rounded-full  cursor-pointer " data-testid="avatar"><svg class="avatar-initials w-full h-full" viewBox="0 0 512 512"><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-weight="bold" font-size="150" class="avatar-text varient-filled-primary">DF</text></svg></figure>
 
@@ -46,12 +85,7 @@
 
 	
 	<div class="flex-auto w-full h-full flex overflow-hidden">
-		<aside id="sidebar-left" class="flex-none overflow-x-hidden overflow-y-auto bg-surface-500/5 w-56 p-4">
-		<nav class="list-nav"><ul><li><a href="/skeleton-testing/">Home</a></li>
-				<li><a href="/skeleton-testing/notes">Notes</a></li>
-				<li><a href="/skeleton-testing/data" data-sveltekit-preload-data="hover">Data</a></li></ul></nav>
 		
-	</aside>
 
 		
 		<div id="page" class=" flex-1 overflow-x-hidden flex flex-col">
@@ -59,10 +93,26 @@
 
 			
 			<main id="page-content" class="flex-auto ">
-	<div class="container mx-auto p-8 space-y-8"><h1>Data section</h1>
+	<div id="appShell" class="w-full h-full flex flex-col overflow-hidden " data-testid="app-shell">
+	
+
+	
+	<div class="flex-auto w-full h-full flex overflow-hidden">
+		<aside id="sidebar-left" class="flex-none overflow-x-hidden overflow-y-auto bg-surface-500/5 w-56 p-4">
+        <nav class="list-nav"><ul><li><a href="#products">Top Products</a></li>
+                <li><a href="#users">Top Users</a></li></ul></nav>
+        
+    </aside>
+
+		
+		<div id="page" class=" flex-1 overflow-x-hidden flex flex-col">
+			
+
+			
+			<main id="page-content" class="flex-auto "><div class="container mx-auto p-8 space-y-8"><h1>Data section</h1>
     <p>Here I make a call for some data and display it on the screen.</p>
     
-    <h2 class="underline">Top products</h2>
+    <h2 class="underline" id="products">Top products</h2>
     <div class="flex flex-col pad-4"><h3>iPhone 9</h3>
             <p>An apple mobile which is nothing like apple</p>
         </div><div class="flex flex-col pad-4"><h3>iPhone X</h3>
@@ -84,7 +134,7 @@
         </div><div class="flex flex-col pad-4"><h3>HP Pavilion 15-DK1056WM</h3>
             <p>HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10</p>
         </div>
-    <h2 class="underline">Top users</h2>
+    <h2 class="underline" id="users">Top users</h2>
     <div class="flex flex-col pad-4"><h3>Terry Medhurst</h3>
             <p>Age 50 with Green eyes.</p>
         </div><div class="flex flex-col pad-4"><h3>Sheldon Quigley</h3>
@@ -114,6 +164,15 @@
 		</div>
 
 	
+	</div></main>
+
+			
+			</div>
+
+		
+		</div>
+
+	
 	</div>
 
 
@@ -121,7 +180,7 @@
 			<script type="application/json" data-sveltekit-fetched data-url="https://dummyjson.com/products?limit=10">{"status":200,"statusText":"OK","headers":{},"body":"{\"products\":[{\"id\":1,\"title\":\"iPhone 9\",\"description\":\"An apple mobile which is nothing like apple\",\"price\":549,\"discountPercentage\":12.96,\"rating\":4.69,\"stock\":94,\"brand\":\"Apple\",\"category\":\"smartphones\",\"thumbnail\":\"https://i.dummyjson.com/data/products/1/thumbnail.jpg\",\"images\":[\"https://i.dummyjson.com/data/products/1/1.jpg\",\"https://i.dummyjson.com/data/products/1/2.jpg\",\"https://i.dummyjson.com/data/products/1/3.jpg\",\"https://i.dummyjson.com/data/products/1/4.jpg\",\"https://i.dummyjson.com/data/products/1/thumbnail.jpg\"]},{\"id\":2,\"title\":\"iPhone X\",\"description\":\"SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...\",\"price\":899,\"discountPercentage\":17.94,\"rating\":4.44,\"stock\":34,\"brand\":\"Apple\",\"category\":\"smartphones\",\"thumbnail\":\"https://i.dummyjson.com/data/products/2/thumbnail.jpg\",\"images\":[\"https://i.dummyjson.com/data/products/2/1.jpg\",\"https://i.dummyjson.com/data/products/2/2.jpg\",\"https://i.dummyjson.com/data/products/2/3.jpg\",\"https://i.dummyjson.com/data/products/2/thumbnail.jpg\"]},{\"id\":3,\"title\":\"Samsung Universe 9\",\"description\":\"Samsung's new variant which goes beyond Galaxy to the Universe\",\"price\":1249,\"discountPercentage\":15.46,\"rating\":4.09,\"stock\":36,\"brand\":\"Samsung\",\"category\":\"smartphones\",\"thumbnail\":\"https://i.dummyjson.com/data/products/3/thumbnail.jpg\",\"images\":[\"https://i.dummyjson.com/data/products/3/1.jpg\"]},{\"id\":4,\"title\":\"OPPOF19\",\"description\":\"OPPO F19 is officially announced on April 2021.\",\"price\":280,\"discountPercentage\":17.91,\"rating\":4.3,\"stock\":123,\"brand\":\"OPPO\",\"category\":\"smartphones\",\"thumbnail\":\"https://i.dummyjson.com/data/products/4/thumbnail.jpg\",\"images\":[\"https://i.dummyjson.com/data/products/4/1.jpg\",\"https://i.dummyjson.com/data/products/4/2.jpg\",\"https://i.dummyjson.com/data/products/4/3.jpg\",\"https://i.dummyjson.com/data/products/4/4.jpg\",\"https://i.dummyjson.com/data/products/4/thumbnail.jpg\"]},{\"id\":5,\"title\":\"Huawei P30\",\"description\":\"Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.\",\"price\":499,\"discountPercentage\":10.58,\"rating\":4.09,\"stock\":32,\"brand\":\"Huawei\",\"category\":\"smartphones\",\"thumbnail\":\"https://i.dummyjson.com/data/products/5/thumbnail.jpg\",\"images\":[\"https://i.dummyjson.com/data/products/5/1.jpg\",\"https://i.dummyjson.com/data/products/5/2.jpg\",\"https://i.dummyjson.com/data/products/5/3.jpg\"]},{\"id\":6,\"title\":\"MacBook Pro\",\"description\":\"MacBook Pro 2021 with mini-LED display may launch between September, November\",\"price\":1749,\"discountPercentage\":11.02,\"rating\":4.57,\"stock\":83,\"brand\":\"Apple\",\"category\":\"laptops\",\"thumbnail\":\"https://i.dummyjson.com/data/products/6/thumbnail.png\",\"images\":[\"https://i.dummyjson.com/data/products/6/1.png\",\"https://i.dummyjson.com/data/products/6/2.jpg\",\"https://i.dummyjson.com/data/products/6/3.png\",\"https://i.dummyjson.com/data/products/6/4.jpg\"]},{\"id\":7,\"title\":\"Samsung Galaxy Book\",\"description\":\"Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched\",\"price\":1499,\"discountPercentage\":4.15,\"rating\":4.25,\"stock\":50,\"brand\":\"Samsung\",\"category\":\"laptops\",\"thumbnail\":\"https://i.dummyjson.com/data/products/7/thumbnail.jpg\",\"images\":[\"https://i.dummyjson.com/data/products/7/1.jpg\",\"https://i.dummyjson.com/data/products/7/2.jpg\",\"https://i.dummyjson.com/data/products/7/3.jpg\",\"https://i.dummyjson.com/data/products/7/thumbnail.jpg\"]},{\"id\":8,\"title\":\"Microsoft Surface Laptop 4\",\"description\":\"Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.\",\"price\":1499,\"discountPercentage\":10.23,\"rating\":4.43,\"stock\":68,\"brand\":\"Microsoft Surface\",\"category\":\"laptops\",\"thumbnail\":\"https://i.dummyjson.com/data/products/8/thumbnail.jpg\",\"images\":[\"https://i.dummyjson.com/data/products/8/1.jpg\",\"https://i.dummyjson.com/data/products/8/2.jpg\",\"https://i.dummyjson.com/data/products/8/3.jpg\",\"https://i.dummyjson.com/data/products/8/4.jpg\",\"https://i.dummyjson.com/data/products/8/thumbnail.jpg\"]},{\"id\":9,\"title\":\"Infinix INBOOK\",\"description\":\"Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty\",\"price\":1099,\"discountPercentage\":11.83,\"rating\":4.54,\"stock\":96,\"brand\":\"Infinix\",\"category\":\"laptops\",\"thumbnail\":\"https://i.dummyjson.com/data/products/9/thumbnail.jpg\",\"images\":[\"https://i.dummyjson.com/data/products/9/1.jpg\",\"https://i.dummyjson.com/data/products/9/2.png\",\"https://i.dummyjson.com/data/products/9/3.png\",\"https://i.dummyjson.com/data/products/9/4.jpg\",\"https://i.dummyjson.com/data/products/9/thumbnail.jpg\"]},{\"id\":10,\"title\":\"HP Pavilion 15-DK1056WM\",\"description\":\"HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10\",\"price\":1099,\"discountPercentage\":6.18,\"rating\":4.43,\"stock\":89,\"brand\":\"HP Pavilion\",\"category\":\"laptops\",\"thumbnail\":\"https://i.dummyjson.com/data/products/10/thumbnail.jpeg\",\"images\":[\"https://i.dummyjson.com/data/products/10/1.jpg\",\"https://i.dummyjson.com/data/products/10/2.jpg\",\"https://i.dummyjson.com/data/products/10/3.jpg\",\"https://i.dummyjson.com/data/products/10/thumbnail.jpeg\"]}],\"total\":100,\"skip\":0,\"limit\":10}"}</script>
 			<script>
 				{
-					__sveltekit_fttja6 = {
+					__sveltekit_32hej6 = {
 						assets: "/skeleton-testing",
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
@@ -129,14 +188,14 @@
 
 					const element = document.currentScript.parentElement;
 
-					const data = [null,null];
+					const data = [null,null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.dd93d9fd.js"),
-						import("./_app/immutable/entry/app.565c9916.js")
+						import("./_app/immutable/entry/start.921656ab.js"),
+						import("./_app/immutable/entry/app.64d8c6af.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 3],
+							node_ids: [0, 2, 4],
 							data,
 							form: null,
 							error: null
